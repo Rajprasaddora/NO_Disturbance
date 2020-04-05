@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="40dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/eventName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Meeting "
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.068" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/fbCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/eventName">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/fbImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_facebook_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/fbText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:text="facebook"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/fbImage"
+                        app:layout_constraintStart_toEndOf="@+id/fbImage"
+                        app:layout_constraintTop_toTopOf="@+id/fbImage" />
+
+                    <Switch
+                        android:id="@+id/fbSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:layout_constraintBottom_toBottomOf="@+id/fbText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/fbText" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/instaCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/fbCard">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/instaImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_instagram_svgrepo_com" />
+
+                    <TextView
+                        android:id="@+id/instaText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:text="Instagram"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/instaImage"
+                        app:layout_constraintStart_toEndOf="@+id/instaImage"
+                        app:layout_constraintTop_toTopOf="@+id/instaImage" />
+
+                    <Switch
+                        android:id="@+id/instaSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:layout_constraintBottom_toBottomOf="@+id/instaText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/instaText" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/callCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/instaCard">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/callImage"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_call" />
+
+                    <TextView
+                        android:id="@+id/callText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:text="Call"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/callImage"
+                        app:layout_constraintStart_toEndOf="@+id/callImage"
+                        app:layout_constraintTop_toTopOf="@+id/callImage" />
+
+                    <Switch
+                        android:id="@+id/callSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:layout_constraintBottom_toBottomOf="@+id/callText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/callText" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/messageCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/callCard">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/messageImage"
+                        android:layout_width="65dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_message" />
+
+                    <TextView
+                        android:id="@+id/messageText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:text="message"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/messageImage"
+                        app:layout_constraintStart_toEndOf="@+id/messageImage"
+                        app:layout_constraintTop_toTopOf="@+id/messageImage" />
+
+                    <Switch
+                        android:id="@+id/messageSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:layout_constraintBottom_toBottomOf="@+id/messageText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/messageText" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/whatsappCard"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="18dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/messageCard">
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/whatsappImage"
+                        android:layout_width="70dp"
+                        android:layout_height="80dp"
+                        android:layout_marginStart="8dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/ic_whatsapp" />
+
+                    <TextView
+                        android:id="@+id/whatsappText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="19dp"
+                        android:text="whatsapp"
+                        android:textColor="@color/design_default_color_primary"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="@+id/whatsappImage"
+                        app:layout_constraintStart_toEndOf="@+id/whatsappImage"
+                        app:layout_constraintTop_toTopOf="@+id/whatsappImage" />
+
+                    <Switch
+                        android:id="@+id/whatsappSwitch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:scaleX="1.25"
+                        android:scaleY="1.25"
+                        app:layout_constraintBottom_toBottomOf="@+id/whatsappText"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/whatsappText" />
+
+                </android.support.constraint.ConstraintLayout>
+            </android.support.v7.widget.CardView>
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
